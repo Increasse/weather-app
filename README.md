@@ -1,16 +1,27 @@
-# React + Vite
+# 🌤️ WeatherApp — умный помощник для планирования дня
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-19-blue?logo=react)
+![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite)
+![CSS Modules](https://img.shields.io/badge/CSS_Modules-✔-green)
+![OpenWeatherMap](https://img.shields.io/badge/OpenWeatherMap-API-orange)
 
-Currently, two official plugins are available:
+Современное веб-приложение для отслеживания погоды с интеллектуальными рекомендациями активностей. Проект демонстрирует глубокое понимание React-экосистемы, работы с API, адаптивного дизайна и пользовательского опыта.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+## Особенности
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Поиск городов** — интуитивный поиск с валидацией и обработкой ошибок
+- **Реальная погода** — интеграция с OpenWeatherMap API (температура, влажность, ветер, иконки)
+- **Умные рекомендации** — анализ погодных условий и предложение активностей (20+ сценариев)
+- **Адаптивный дизайн** — корректное отображение на всех устройствах (mobile-first подход)
+- **UX оптимизация** — индикаторы загрузки, обработка ошибок с кнопкой повтора, плавные анимации
+- **Persistent storage** — сохранение последнего города в localStorage
 
-## Expanding the ESLint configuration
+## Стек технологий
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Технология | Назначение |
+|------------|------------|
+| **React 19** | UI библиотека |
+| **Vite** | Сборка проекта |
+| **CSS Modules** | Изоляция стилей компонентов |
+| **OpenWeatherMap API** | Источник данных о погоде |
