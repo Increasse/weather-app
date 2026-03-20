@@ -1,0 +1,338 @@
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cityName {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.temperature {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #667eea;
+    margin: 15px 0;
+    line-height: 1;
+}
+
+.temperature span {
+    font-size: 2rem;
+    vertical-align: super;
+}
+
+.description {
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    border-top: 2px solid #f0f0f0;
+    border-bottom: 2px solid #f0f0f0;
+    margin: 20px 0;
+}
+
+.detailItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.detailLabel {
+    font-size: 0.9rem;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.detailValue {
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.emptyState {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+    border-radius: 20px;
+    border: 3px dashed #adb5bd;
+    animation: fadeIn 0.5s ease;
+}
+
+.emptyIcon {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.emptyState h3 {
+    color: #495057;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.emptyState p {
+    color: #6c757d;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.simplifiedCard {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 400px;
+    padding: 25px 20px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.simplifiedHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(102, 126, 234, 0.1);
+}
+
+.simplifiedCityName {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: 600;
+    margin: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.simplifiedIcon {
+    width: 70px;
+    height: 70px;
+    filter: drop-shadow(0 4px 8px rgba(102, 126, 234, 0.3));
+    animation: floatIcon 3s ease-in-out infinite;
+}
+
+@keyframes floatIcon {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.simplifiedTemp {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    font-weight: 300;
+    color: #667eea;
+    margin: 20px 0;
+    line-height: 1;
+    text-shadow: 0 10px 20px rgba(102, 126, 234, 0.2);
+    animation: fadeInScale 0.5s ease;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.simplifiedTemp span {
+    font-size: 2rem;
+    vertical-align: super;
+    margin-left: 5px;
+    color: #999;
+}
+
+.simplifiedDescription {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    padding: 10px;
+    background: rgba(102, 126, 234, 0.05);
+    border-radius: 30px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.simplifiedDetails {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 15px;
+    margin-top: auto; /* Это прижимает блок к низу */
+    background: rgba(102, 126, 234, 0.03);
+    border-radius: 15px;
+    border: 1px solid rgba(102, 126, 234, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.simplifiedDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 0 15px;
+}
+
+.simplifiedDetail span:first-child {
+    font-size: 1.8rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.simplifiedDetail span:last-child {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #495057;
+    background: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .simplifiedCard {
+        min-height: 350px;
+        padding: 20px 15px;
+    }
+
+    .simplifiedCityName {
+        font-size: 1.5rem;
+    }
+
+    .simplifiedIcon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .simplifiedTemp {
+        font-size: 4rem;
+    }
+
+    .simplifiedTemp span {
+        font-size: 1.5rem;
+    }
+
+    .simplifiedDescription {
+        font-size: 1.1rem;
+        padding: 8px 16px;
+    }
+
+    .simplifiedDetails {
+        padding: 15px 10px;
+    }
+
+    .simplifiedDetail {
+        padding: 0 8px;
+    }
+
+    .simplifiedDetail span:first-child {
+        font-size: 1.5rem;
+    }
+
+    .simplifiedDetail span:last-child {
+        font-size: 0.95rem;
+        padding: 3px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .simplifiedCard {
+        min-height: 300px;
+        padding: 15px 12px;
+    }
+
+    .simplifiedHeader {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+    .simplifiedCityName {
+        font-size: 1.3rem;
+    }
+
+    .simplifiedIcon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .simplifiedTemp {
+        font-size: 3.5rem;
+        margin: 10px 0;
+    }
+
+    .simplifiedDescription {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .simplifiedDetails {
+        padding: 12px 8px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .simplifiedDetail {
+        flex: 1;
+        min-width: 80px;
+    }
+}
+
+/* Анимация появления */
+@keyframes slideUpDetails {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.simplifiedDetails {
+    animation: slideUpDetails 0.5s ease 0.2s both;
+}
